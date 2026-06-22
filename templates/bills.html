@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill Records</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Bill Records</h1>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Patient</th>
+<th>Treatment</th>
+<th>Amount</th>
+<th>Date</th>
+</tr>
+
+{% for bill in bills %}
+
+<tr>
+<td>{{ bill[0] }}</td>
+<td>{{ bill[1] }}</td>
+<td>{{ bill[2] }}</td>
+<td>{{ bill[3] }}</td>
+<td>{{ bill[4] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>

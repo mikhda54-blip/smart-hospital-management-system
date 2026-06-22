@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <h1>🏥 SMART HOSPITAL MANAGEMENT SYSTEM</h1>
+    <p>Welcome to your Hospital Management Dashboard.</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Patient Management</h2>
+            <a href="/patient"><button>Register Patient</button></a>
+            <a href="/patients"><button>View Patients</button></a>
+        </div>
+
+        <div class="card">
+            <h2>Doctor Management</h2>
+            <a href="/doctor"><button>Add Doctor</button></a>
+            <a href="/doctors"><button>View Doctors</button></a>
+        </div>
+
+        <div class="card">
+            <h2>Appointment Scheduling</h2>
+            <a href="/appointment"><button>Book Appointment</button></a>
+            <a href="/appointments"><button>View Appointments</button></a>
+        </div>
+
+        <div class="card">
+            <h2>Billing & Invoices</h2>
+            <a href="/billing"><button>Generate Bill</button></a>
+            <a href="/bills"><button>View Bills</button></a>
+        </div>
+
+        <div class="card">
+            <h2>System Dashboard</h2>
+            <p>Total Patients</p>
+            <p>Total Doctors</p>
+            <p>Total Appointments</p>
+        </div>
+
+        <div class="card">
+            <h2>Admin Portal</h2>
+            <a href="/login"><button>Admin Login</button></a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

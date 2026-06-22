@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Billing System</h1>
+
+    <form method="POST">
+
+        <label>Patient Name</label>
+        <input type="text" name="patient_name" required>
+
+        <label>Treatment</label>
+        <input type="text" name="treatment" required>
+
+        <label>Amount</label>
+        <input type="number" name="amount" required>
+
+        <label>Bill Date</label>
+        <input type="date" name="bill_date" required>
+
+        <br><br>
+
+        <input type="submit" value="Generate Bill">
+
+    </form>
+
+</div>
+
+</body>
+</html>
